@@ -3,20 +3,22 @@
 <head>
     <meta charset="utf-8">
     <title>Web Page title</title>
+    <link rel="stylesheet" href="style.css"
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
 </head>
-<body>
+
+<body id="activities">
     <div class="container">
         <header>
             <div class="main-header">
-                <img src="images/cliff_ocean.jpg" alt="cliff_ocean" width="800" height="400">
                 <div class="logo">
                     <img src="images/logo.png" alt="cliff_ocean" width="120" height="120">
                 </div>
                 <nav class="main-menu"></nav>
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li>Cliffs</li>
-                        <li><a href="activities.html">Activities</a></li>
+                        <li><a href="cliffs.html">Cliffs</a></li>
+                        <li class="active"><a href="activities.html">Activities</a></li>
                         <li><a href="contract.html">Contact</a></li>
                     </ul>
                 </nav> 
@@ -81,12 +83,24 @@
         
         <section>
             <ul id="partners"> 
-                <li class="partner"><h3>Partner 1 Image</h3></li>
-                <li class="partner"><h3>Partner 2 Image</h3></li>
-                <li class="partner"><h3>Partner 3 Image</h3></li>
-                <li class="partner"><h3>Partner 4 Image</h3></li>
-                <li class="partner"><h3>Partner 5 Image</h3></li>
-                <li class="partner"><h3>Partner 6 Image</h3></li>
+                <li class="partner">
+                    <img src="images/partners/partner-bustour.png" alt="Partner Bus Tours" >
+                </li>
+                <li class="partner">
+                    <img src="images/partners/partner-cabinrental.png" alt="Partner Cabin Rental"> 
+                </li>
+                <li class="partner">
+                    <img src="images/partners/partner-campingadv.png" alt="Partner Camping Adventure"> 
+                </li>
+                <li class="partner">
+                    <img src="images/partners/partner-collegetours.png" alt="Partner College Tours"> 
+                </li>
+                <li class="partner">
+                    <img src="images/partners/partner-rentalbike.png" alt="Partner Bike Rentals"> 
+                </li>
+                <li class="partner">
+                    <img src="images/partners/partner-tourgroup.png" alt="Partner Tour Group"> 
+                </li>
             </ul>
         </section>
 
@@ -95,13 +109,14 @@
                 <div class="copy">
                     &copy; Copyright 2020 :: GreatCliffs.com
                 </div>
-                <div class="social"></div>
-                <section>
-                    <ul id="partners"> 
-                        <li class="partner"><h3>FaceBook Image</h3></li>
-                        <li class="partner"><h3>Instagram Image</h3></li>
-                        <li class="partner"><h3>Twitter Image</h3></li>
-                    </ul>
+                <div class="social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" ><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" ><i class="fab fa-instagram"></i></a>
+                </div>
                 </section>
                 <p>This website is designed and created solely for educational purposes only at Westcliff University. All contents are not intended for any commercial gain or use.                </p>
             </div>
