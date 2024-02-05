@@ -3,9 +3,10 @@
 <head>
     <title>Great Cliffs of California</title>
     <meta charset="utf-8">
+
     <!--Font Awesome-->
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
 </head>
 
 <body id="home">
@@ -20,7 +21,7 @@
                         <li class="active"><a href="index.html">Home</a></li>
                         <li><a href="cliffs.html">Cliffs</a></li>
                         <li><a href="activities.html">Activities</a></li>
-                        <li><a href="contract.html">Contact</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav> 
             </div>
@@ -70,57 +71,18 @@
                     <a href="#" class="fa fa-facebook"></a>
                     <a href="#" class="fa fa-instagram"></a>
                     <a href="#" class="fa fa-twitter"></a>
-                    <a href="#" ><i class="fab fa-facebook"></i></a>
-                    <a href="#" class="fab fa-twitter"></a>
-                    <a href="#" ><i class="fab fa-instagram"></i></a>
                 </div>
                 
                 <p>This website is designed and created solely for educational purposes only at Westcliff University. All contents are not intended for any commercial gain or use.                </p>
             </div>
         </footer>
     </div>
-    <!--JavaScript Codes-->
-    <script>
-        //Create a time data function
-        function currentTime(){
-            //Declare variables
-            var d = new Data(); //Get current date
-            var hr = d.getHours(); //Get current hours
-            var min = d.getMinutes(); //Get current minutes
-            var sec = d.getSeconds(); // Get current seconds
-            var ampm; //Declare empty variabnle to store AM or PM
-        }
-        // Add 0 to single digits for seconds 
-        if (sec < 10) {
-            sec = "0" + sec;
-        }
-        //Add 0 to single digits for minutes
-        if (min < 10) {
-            min = "0" + min;
-        }
-        
-        // Determine AM or PM string
-        if (hr == 12) {
-            ampm = "PM"; //Set to PM
-        } else if ( hr >12 ) {
-            hr -= 12; //Deduct 12 from hours greater than 12(military time)
-            ampm = "PM"; //Set to PM
-        } else {
-            ampm = "AM"; //Set to AM
-        }
-        // Assemble time format to display
-        var time = hr + ":" + min + ":" + sec + " " + ampm;
-        // Display current local time and time zone on HTML elements
-        document.getElementByID("clock").innerText = time; //adding time
 
-        // Run time data function every 1 second
-        setInterval(currentTime, 1000);
-        // Initial run of time data function
-        currentTime();
-        var utchr = d.getUTCHours(); // Get current Greenwich Mean Time (GMT)
-        var timeDiff; //To store time difference between GMT hour and Local hour
-        var adjTimeDiff; //To store time difference converted to positive number
-        var timeZone; //To store the 4 time zones (PT, MT,CT,ET)
-    </script>    
+    <!--Digital Clock-->
+    <script src="js/digclock.js"></script>
+
+    <!--Partners-->
+    <script src="js/site_scripts.js"></script>
+       
 </body>
 </html>

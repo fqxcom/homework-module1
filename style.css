@@ -3,6 +3,7 @@ header{
     width: 100%;
     min-height: 400px;
     padding-top: 3em;
+    position: relative;
 }
 #home header{
     background: no-repeat lightgrey url(images/cliff_ocean.jpg);
@@ -39,13 +40,13 @@ header{
     margin-left: 227px;
     font-weight: 400;
 }
-.main-menu ul li{
+.main-menu ul li {
     list-style-type: none;
-    display: inline-block;
     float: left;
+    display: block; 
     padding-left: 25px;
     padding-right: 25px;
-    border-left: 1px solid rgba(202,204,202,0.6);
+    border-left: 1px solid rgba(202, 204, 202, 0.6);
     line-height: 100px;
     text-transform: uppercase;
     font-size: 14px;
@@ -69,6 +70,7 @@ header{
 /* Main area styling */
 main {
     font-family: Arial, Helvetica, sans-serif;
+    margin: 50px;
 }
   
 /* Main heading */
@@ -202,54 +204,124 @@ td:first-child{
     font-weight: bold;
     background: #bde1ff;
 }
-/*contract*/
-.button {
-    background-color: blue;
-    color: white;
-    padding: 10px 15px;
-    border: none;
+
+/*Contact*/
+
+.contactinfo {
+    margin:10px;
+}
+.phone{
+    margin-bottom: 10px;
+}
+.phoneSpan {
+    font-weight:bold;
+}
+.emailSpan {
+    font-weight: bold;
+}
+legend{
+    color: #4977D1;
     text-transform: uppercase;
     font-weight: bold;
 }
-span:first-child {
-    color: green;
-    font-size: 16px;
-}
-.content-area {
-    margin: 20px;
-    padding: 15px;
-}
-.contact-header {
-    color: navy;
-    font-size: 24px;
-    text-align: center;
-    text-transform: capitalize;
-    font-weight: 600;
-}
-.contact-form {
-    width: 100%;
-    border: 1px solid #ddd;
-    padding: 15px;
-}
-.form-group {
+label{
     display: block;
-    margin-bottom: 15px;
+    margin: 15px 0 0 0;
+    font-weight: bold;
 }
-textarea {
-    resize: vertical;
+input{
+    width: 400px;
 }
-.contact-footer {
-    background-color: lightgray;
+input[type="radio"]{
+    width: 25px;
+    display: inline;
+}
+.radioLabel{
+    display: inline-block;
+}
+select{
+    width: 150px;
+    text-align: center;
+}
+.selectLabel{
+    display: inline-block
+}
+textarea{
+    width: 400px;
+    height: 100px;
+}
+input[type="submit"]{
+    display: block;
+    margin: 20px 0 10px 0;
+    width: 100px;
+    padding: 10px 25px 10px 25px;
+    background: #4977D1;
+    border: none;
+    color: #fff;
+    margin-left: 300px;
+}
+
+/* Cliffs*/
+
+.wrapper {
+    padding: 0 45px;
+    height: 650px;
+    margin-top: 20px;
+}
+.Westcliff{
+    width: 500px;
+    float: right;
+}
+.NorthCliff{
+    width: 500px;
+    float: left;
+}
+.EastCliff{
+    width: 500px;
+    float: right;
+}
+.SouthCliff{
+    width: 500px;
+    float: left;
+}
+.headingStyle{
+    background: #852b1b;
+    height: 40px;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding-top: 1em;
+    text-align: center;
+    width: 500px;
+    margin: 0;
 }
 
 /*Week 3 JavaScrpit*/
 
-body{
-    font-family: 'Arial' , 'Helvetica' , sans-serif;
+
+#timeofday{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3a3a3a;
+    font-size: 14px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 45px;
+    background: linear-gradient(0deg, rgba(251,215,139,1) 0%, rgba(118,213,245,1) 100%);
 }
-.display-area {
+
+#timeofday span {
     color: #3a3a3a;
 }
-.display-area {
-    background: linear-gradient(0deg, rgba(251,215,139,1) 0%, rgba(118,213,245,1) 100%);
+
+/* Week 4 */
+
+form .button input{
+    width: 8em;
+    height: 2.5em;
+    font-size: 1.2em;
+    font-weight: bold;
+    /* background-color: #4977D1;*/
+    color:#ffffff;
+    border:none;
 }
