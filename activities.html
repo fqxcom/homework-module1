@@ -4,11 +4,39 @@
     <title>Great Cliffs of California</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
 </head>
 
 <body id="activities">
     <div class="container">
+        
+        <header>
+            <div class="main-header sticky-top">
+                <nav class="main-menu navbar navbar-expand-1g navbar-dark bg-dark">
+                    <div class="logo">
+                        <img src="images/logo.png" alt="cliff_ocean" width="120" height="120">
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav"
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-link"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-link"><a class="nav-link" href="cliffs.html">Cliffs</a></li>
+                            <li class="nav-link active"><a class="nav-link" href="activities.html">Activities</a></li>
+                            <li class="nav-link"><a class="nav-link" href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav> 
+            </div>
+        </header>
+
+        
+        <!--
         <header>
             <div class="main-header">
                 <div class="logo">
@@ -24,7 +52,7 @@
                 </nav> 
             </div>
         </header>
-        
+        -->
         <main>
             <h1>Activities</h1>
             <p>There are many planned activities at all the cliff sites. Some are scheduled daily, weekly, monthly and yearly. These activities are not however run by the state park and recreational department. They are operated and manage by private vendors but are partners with the state department. Therefore, for schedule inquiries or information, please contact them directly. For a list of activities, please refer to the table below:</p>
@@ -79,6 +107,16 @@
                     </tr>
                 </tbody>
             </table>
+
+            <div id="displaySelected">
+                <div id="result">
+                    <h4>My Selected activities to enquire:</h4>
+                </div>
+                <div id="sendinfo">
+                    <input tpye="email" placeholder="johndoe@gmail.com"></input>
+                    <button>Get Info</button>
+                </div>
+            </div>
         </main>
         
         <section>
@@ -122,6 +160,15 @@
     
     <!--Partners-->
     <script src="js/site_scripts.js"></script>
+
+    <!-- jQuery -->
+
+    <script src="js/activity.js"> </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 
 </body>
 </html>
